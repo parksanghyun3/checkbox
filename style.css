@@ -1,0 +1,47 @@
+
+/* -------------------------------------- common css start ------------------------------------- */
+* {padding: 0; margin: 0; box-sizing: border-box;}
+a {text-decoration: none;}
+ul {list-style: none;}
+.inner {position: relative; margin: 0 auto; width: 1200px;}
+.only_pc {display: block;}
+.only_mob {display: none;}
+.section_sub_title {font-size: 36px; text-align: center; color: #000;}
+.letter_specing {letter-spacing: -.08em;}
+.bold {font-weight: 700;}
+
+@media screen and (max-width: 1240px) {
+  .inner {margin: 0 auto; width: calc(100% - 60px);}
+}
+@media screen and (max-width: 1024px) {
+  .inner {margin: 0 auto; width: calc(100% - 60px);}
+  .only_pc {display: none;}
+  .only_mob {display: block;}
+  .section_sub_title {font-size: 22px; text-align: left;}
+}
+
+/* -------------------------------------- common css end ------------------------------------- */
+
+/* -------------------------------------- header css start ------------------------------------- */
+
+header {position: fixed; top: 0; left: 0; z-index: 999; display: none; width: 100%; height: 100px; border-bottom: 1px solid #ddd; background-color: #fff;}
+
+/* -------------------------------------- header css end ------------------------------------- */
+
+/* -------------------------------------- main css start ------------------------------------- */
+
+.check_area {display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh; background-color: #fff;}
+.check_area .inner {}
+.check_area .inner .all_check {display: inline-block;}
+.check_area .inner .agree_wrap {margin-top: 40px;}
+.check_area .inner .agree_wrap .agree {margin-top: 20px;}
+.check_area .inner .marketing_wrap {margin-top: 40px;}
+.check_area .inner .marketing_wrap .marketing_all_check {}
+.check_area .inner .marketing_wrap .marketing_box .marketing_list {margin-top: 20px;}
+.check_area .inner .input_box {position: relative;}
+.check_area .inner input[type="checkbox"] {position: absolute; top: 0; left: 0; width: 20px; height: 20px; opacity: 0; z-index: 999;}
+.check_area .inner input[type="checkbox"] + label{position: relative; display: inline-block; padding-left: 30px; background: url("./images/icon-checkbox.svg") no-repeat; background-position: left center; background-size: 20px 20px;}
+.check_area .inner input[type="checkbox"]:checked + label{background: url("./images/icon-checkbox-on.svg") no-repeat; background-position: left center; background-size: 20px 20px;}
+.check_area .inner label {cursor: pointer;}
+.check_area .inner label span.essential {color: #b60000;}
+.check_area .inner label span {color: #999;}

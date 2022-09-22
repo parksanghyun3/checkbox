@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>체크박스</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="check_area">
+    <div class="inner">
+      <div class="all_check input_box">
+        <input type="checkbox" name="checking" id="check1">
+        <label for="check1">전체 약관 동의하기</label>
+      </div>
+      <div class="agree_wrap">
+        <div class="agree input_box">
+          <input type="checkbox" name="checking" id="check2">
+          <label for="check2">개인정보 수집 및 이용약관 동의<span class="essential">(필수)</span></label>
+        </div>
+        <div class="agree input_box">
+          <input type="checkbox" name="checking" id="check3">
+          <label for="check3">제3자 정보제공 이용약관 동의<span class="essential">(필수)</span></label>
+        </div>
+      </div>
+      <div class="marketing_wrap">
+        <div class="marketing_all_check input_box">
+          <input type="checkbox" name="checking" id="check4">
+          <label for="check4">마케팅 수신 동의<span class="select">(선택)</span></label>
+        </div>
+        <div class="marketing_box">
+          <div class="marketing_list input_box">
+            <input type="checkbox" name="checking" id="check5">
+            <label for="check5">Email</label>
+          </div>
+          <div class="marketing_list input_box">
+            <input type="checkbox" name="checking" id="check6">
+            <label for="check6">Sns</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
