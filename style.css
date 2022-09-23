@@ -39,7 +39,7 @@ header {position: fixed; top: 0; left: 0; z-index: 999; display: none; width: 10
 .check_area .inner .marketing_wrap .marketing_all_check {}
 .check_area .inner .marketing_wrap .marketing_box .marketing_list {margin-top: 20px;}
 .check_area .inner .input_box {position: relative;}
-.check_area .inner input[type="checkbox"] {position: absolute; top: 0; left: 0; width: 20px; height: 20px; opacity: 0; z-index: 999;}
+.check_area .inner input[type="checkbox"] {position: absolute; top: 0; left: 0; width: 20px; height: 20px; opacity: 0;}
 .check_area .inner input[type="checkbox"] + label{position: relative; display: inline-block; padding-left: 30px; background: url("./images/icon-checkbox.svg") no-repeat; background-position: left center; background-size: 20px 20px;}
 .check_area .inner input[type="checkbox"]:checked + label{background: url("./images/icon-checkbox-on.svg") no-repeat; background-position: left center; background-size: 20px 20px;}
 .check_area .inner label {cursor: pointer;}
