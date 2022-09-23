@@ -31,12 +31,10 @@ header {position: fixed; top: 0; left: 0; z-index: 999; display: none; width: 10
 /* -------------------------------------- main css start ------------------------------------- */
 
 .check_area {display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh; background-color: #fff;}
-.check_area .inner {}
 .check_area .inner .all_check {display: inline-block;}
 .check_area .inner .agree_wrap {margin-top: 40px;}
 .check_area .inner .agree_wrap .agree {margin-top: 20px;}
 .check_area .inner .marketing_wrap {margin-top: 40px;}
-.check_area .inner .marketing_wrap .marketing_all_check {}
 .check_area .inner .marketing_wrap .marketing_box .marketing_list {margin-top: 20px;}
 .check_area .inner .input_box {position: relative;}
 .check_area .inner input[type="checkbox"] {position: absolute; top: 0; left: 0; width: 20px; height: 20px; opacity: 0;}

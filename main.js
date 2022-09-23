@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $("input:checkbox[name=checking]").each(function(e){
     $(this).on("change", function(){
+      // 변수 선언과 할당할때, checkbox each 안에서 변수선언 할당을 해야 length의 값이 제대로 적힘
       var num = $('input:checkbox[name="checking"]:checked').not("#check1").length;
       var num2 = $('input:checkbox[name="checking"]').not("#check1").length;
       var marketing = $(".marketing_list").find('input:checkbox[name="checking"]:checked').length;
@@ -25,20 +26,20 @@ $(document).ready(function(){
       // 전체선택
       $(".all_check").on("click", function(){
         if($(".all_check").find("#check1").prop("checked")){
-          $("input[type=checkbox]").prop("checked", false);
+          $("input[type='checkbox']").prop("checked", false);
         }
         else {
-          $("input[type=checkbox]").prop("checked", true);
+          $("input[type='checkbox']").prop("checked", true);
         }
       });
 
       //마케팅 전체선택
       $(".marketing_all_check").on("click", function(){
         if($(".marketing_all_check").find("#check4").prop("checked")) {
-          $(".marketing_wrap").find("input[type=checkbox]").prop("checked", false);
+          $(".marketing_wrap").find("input[type='checkbox']").prop("checked", false);
         }
         else {
-          $(".marketing_wrap").find("input[type=checkbox]").prop("checked", true);
+          $(".marketing_wrap").find("input[type='checkbox']").prop("checked", true);
         }
       });
   });
